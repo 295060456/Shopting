@@ -1957,31 +1957,31 @@
 			path = 3rd;
 			sourceTree = "<group>";
 		};
-		C558F39E258A2FD60078DB8F /* 第三方头文件管理 */ = {
+		C558F39E258A2FD60078DB8F /* 3rdManager */ = {
 			isa = PBXGroup;
 			children = (
-				C558F3A0258A2FE40078DB8F /* Pods */,
-				C558F39F258A2FDD0078DB8F /* 手动导入的第三方 */,
+				C558F3A0258A2FE40078DB8F /* CocoaPods */,
+				C558F39F258A2FDD0078DB8F /* Manual import */,
 			);
-			path = "第三方头文件管理";
+			path = 3rdManager;
 			sourceTree = "<group>";
 		};
-		C558F39F258A2FDD0078DB8F /* 手动导入的第三方 */ = {
+		C558F39F258A2FDD0078DB8F /* Manual import */ = {
 			isa = PBXGroup;
 			children = (
 				C58F004E24EA577400B6D09C /* Manual_Add_ThirdParty.h */,
 				C58D816F263055BA00966F5F /* JobsBaseCustomizeUIKitCoreHeader.h */,
 			);
-			path = "手动导入的第三方";
+			path = "Manual import";
 			sourceTree = "<group>";
 		};
-		C558F3A0258A2FE40078DB8F /* Pods */ = {
+		C558F3A0258A2FE40078DB8F /* CocoaPods */ = {
 			isa = PBXGroup;
 			children = (
 				C58F004D24EA577400B6D09C /* Pods.h */,
 				C558F345258A2F900078DB8F /* PodsManual.h */,
 			);
-			path = Pods;
+			path = CocoaPods;
 			sourceTree = "<group>";
 		};
 		C558F3A7258A300B0078DB8F /* 各项全局定义 */ = {
@@ -3758,7 +3758,7 @@
 			children = (
 				C58F004924EA571D00B6D09C /* PrefixHeader.pch */,
 				C5D7B4C825A7404D00166E83 /* 数据层相关 */,
-				C558F39E258A2FD60078DB8F /* 第三方头文件管理 */,
+				C558F39E258A2FD60078DB8F /* 3rdManager */,
 				C558F3A7258A300B0078DB8F /* 各项全局定义 */,
 				C558F3AE258A301A0078DB8F /* 其他杂项 */,
 			);
