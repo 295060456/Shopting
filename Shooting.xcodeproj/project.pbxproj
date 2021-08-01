@@ -5921,7 +5921,7 @@
 					"$(PROJECT_DIR)/Other/Sys/libstdc++/iPhone-Device",
 					"$(PROJECT_DIR)/Other/Sys/libstdc++/iPhone-Simulator",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MonkeyKingVideo.Shooting;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JobsComment.JobsAppDoor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
