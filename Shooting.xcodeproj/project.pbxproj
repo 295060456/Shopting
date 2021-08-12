@@ -336,6 +336,8 @@
 		C5C67C9924FF5D28000A26B8 /* CADisplayLink_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C67C9724FF5D28000A26B8 /* CADisplayLink_TimerManager.m */; };
 		C5C67C9F24FF5D3C000A26B8 /* Nanosecond_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C67C9D24FF5D3B000A26B8 /* Nanosecond_TimerManager.m */; };
 		C5C67CA824FF5D68000A26B8 /* MovieCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C67CA624FF5D68000A26B8 /* MovieCountDown.m */; };
+		C5C7C89826C521B9007F4D5F /* UINavigationController+SafeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C7C89726C521B9007F4D5F /* UINavigationController+SafeTransition.m */; };
+		C5C7C89C26C521BD007F4D5F /* TYFFSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C7C89A26C521BD007F4D5F /* TYFFSwizzle.m */; };
 		C5D6DC6525860F3200029AFF /* NSTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D6DC6425860F3200029AFF /* NSTimerManager.m */; };
 		C5D7B0F125A73A5400166E83 /* iph_X.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C5D7B0EF25A73A5300166E83 /* iph_X.mp4 */; };
 		C5D7B0F225A73A5400166E83 /* 非iph_X.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C5D7B0F025A73A5400166E83 /* 非iph_X.mp4 */; };
@@ -1092,6 +1094,10 @@
 		C5C67CA424FF5D53000A26B8 /* TimerManager_DefineStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManager_DefineStructure.h; sourceTree = "<group>"; };
 		C5C67CA624FF5D68000A26B8 /* MovieCountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCountDown.m; sourceTree = "<group>"; };
 		C5C67CA724FF5D68000A26B8 /* MovieCountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCountDown.h; sourceTree = "<group>"; };
+		C5C7C89626C521B9007F4D5F /* UINavigationController+SafeTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SafeTransition.h"; sourceTree = "<group>"; };
+		C5C7C89726C521B9007F4D5F /* UINavigationController+SafeTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SafeTransition.m"; sourceTree = "<group>"; };
+		C5C7C89A26C521BD007F4D5F /* TYFFSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFFSwizzle.m; sourceTree = "<group>"; };
+		C5C7C89B26C521BD007F4D5F /* TYFFSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFFSwizzle.h; sourceTree = "<group>"; };
 		C5D6DC6325860F3200029AFF /* NSTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTimerManager.h; sourceTree = "<group>"; };
 		C5D6DC6425860F3200029AFF /* NSTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTimerManager.m; sourceTree = "<group>"; };
 		C5D7B0EF25A73A5300166E83 /* iph_X.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = iph_X.mp4; sourceTree = "<group>"; };
@@ -2201,6 +2207,7 @@
 		C58D7F352630531500966F5F /* JobsBaseCustomizeUIKitCore */ = {
 			isa = PBXGroup;
 			children = (
+				C5C7C89926C521BD007F4D5F /* TYFSwizzle */,
 				C58D809A2630531600966F5F /* BaseProtocol */,
 				C58D805F2630531600966F5F /* CALayer */,
 				C58D809E2630531600966F5F /* DebugLogDescription */,
@@ -3129,6 +3136,7 @@
 		C58D80272630531600966F5F /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				C5C7C89526C521B9007F4D5F /* UINavigationController+Category */,
 				C58D80282630531600966F5F /* BaseNavigationVC */,
 			);
 			path = UINavigationController;
@@ -4355,6 +4363,24 @@
 			path = "电影倒计时特效";
 			sourceTree = "<group>";
 		};
+		C5C7C89526C521B9007F4D5F /* UINavigationController+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C5C7C89626C521B9007F4D5F /* UINavigationController+SafeTransition.h */,
+				C5C7C89726C521B9007F4D5F /* UINavigationController+SafeTransition.m */,
+			);
+			path = "UINavigationController+Category";
+			sourceTree = "<group>";
+		};
+		C5C7C89926C521BD007F4D5F /* TYFSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				C5C7C89A26C521BD007F4D5F /* TYFFSwizzle.m */,
+				C5C7C89B26C521BD007F4D5F /* TYFFSwizzle.h */,
+			);
+			path = TYFSwizzle;
+			sourceTree = "<group>";
+		};
 		C5D6DC6225860F3200029AFF /* NSTimerManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -5470,6 +5496,7 @@
 				C58E9EFA26313BEB00D1EDB8 /* NSObject+DataBinding.m in Sources */,
 				C5C65404259DF94500FD2F99 /* ECPrivacyCheckMediaAndAppleMusic.m in Sources */,
 				C5361E1A2666A47D005D5168 /* DDNetworkingAPI+LoginApi.m in Sources */,
+				C5C7C89C26C521BD007F4D5F /* TYFFSwizzle.m in Sources */,
 				C5D7B1AC25A73AF100166E83 /* DDRewardConfigModel.m in Sources */,
 				C52DEF50255D2A820016FF07 /* XHLaunchAdConst.m in Sources */,
 				C58F01F924EA60D100B6D09C /* CustomSYSUITabBarController.m in Sources */,
@@ -5594,6 +5621,7 @@
 				C58D80B92630531600966F5F /* UIImage+YBGIF.m in Sources */,
 				C58D80D42630531600966F5F /* UIView+Measure.m in Sources */,
 				C5D7B1C325A73AF100166E83 /* DDCollectionViewCell_Style2.m in Sources */,
+				C5C7C89826C521B9007F4D5F /* UINavigationController+SafeTransition.m in Sources */,
 				C58D80F02630531600966F5F /* NSString+Extras.m in Sources */,
 				C58D80D02630531600966F5F /* BaseView.m in Sources */,
 				C58D80E82630531600966F5F /* BaseCollectionView.m in Sources */,
